@@ -6,7 +6,7 @@
 
 ### How to
 
-Re-gen:
+Warning: this header can be parsed on Linux machines or within a cross-compiling environment. Re-gen:
 
 ```
 make
