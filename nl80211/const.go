@@ -1,4 +1,4 @@
-// WARNING: This file has automatically been generated on Wed, 28 Dec 2016 02:32:08 UTC.
+// WARNING: This file has automatically been generated on Wed, 28 Dec 2016 02:49:17 UTC.
 // By https://git.io/cgogen. DO NOT EDIT.
 
 package nl80211
@@ -20,10 +20,10 @@ const (
 	MulticastGroupNan = "nan"
 	// MulticastGroupTestmode as defined in nl80211/nl80211.h:52
 	MulticastGroupTestmode = "testmode"
-	// CmdGetMeshParams as defined in nl80211/nl80211.h:1080
-	CmdGetMeshParams = 0
-	// CmdSetMeshParams as defined in nl80211/nl80211.h:1081
-	CmdSetMeshParams = 0
+	// CommandGetMeshParams as defined in nl80211/nl80211.h:1080
+	CommandGetMeshParams = 0
+	// CommandSetMeshParams as defined in nl80211/nl80211.h:1081
+	CommandSetMeshParams = 0
 	// MeshSetupVendorPathSelIe as defined in nl80211/nl80211.h:1082
 	MeshSetupVendorPathSelIe = 0
 	// AttrScanGeneration as defined in nl80211/nl80211.h:2332
@@ -139,134 +139,134 @@ type nl80211Commands int32
 
 // nl80211Commands enumeration from nl80211/nl80211.h:880
 const (
-	CmdUnspec = iota
-	CmdGetWiphy
-	CmdSetWiphy
-	CmdNewWiphy
-	CmdDelWiphy
-	CmdGetInterface
-	CmdSetInterface
-	CmdNewInterface
-	CmdDelInterface
-	CmdGetKey
-	CmdSetKey
-	CmdNewKey
-	CmdDelKey
-	CmdGetBeacon
-	CmdSetBeacon
-	CmdStartAp
-	CmdNewBeacon = CmdStartAp
-	CmdStopAp
-	CmdDelBeacon = CmdStopAp
-	CmdGetStation
-	CmdSetStation
-	CmdNewStation
-	CmdDelStation
-	CmdGetMpath
-	CmdSetMpath
-	CmdNewMpath
-	CmdDelMpath
-	CmdSetBss
-	CmdSetReg
-	CmdReqSetReg
-	CmdGetMeshConfig
-	CmdSetMeshConfig
-	CmdSetMgmtExtraIe
-	CmdGetReg
-	CmdGetScan
-	CmdTriggerScan
-	CmdNewScanResults
-	CmdScanAborted
-	CmdRegChange
-	CmdAuthenticate
-	CmdAssociate
-	CmdDeauthenticate
-	CmdDisassociate
-	CmdMichaelMicFailure
-	CmdRegBeaconHint
-	CmdJoinIbss
-	CmdLeaveIbss
-	CmdTestmode
-	CmdConnect
-	CmdRoam
-	CmdDisconnect
-	CmdSetWiphyNetns
-	CmdGetSurvey
-	CmdNewSurveyResults
-	CmdSetPmksa
-	CmdDelPmksa
-	CmdFlushPmksa
-	CmdRemainOnChannel
-	CmdCancelRemainOnChannel
-	CmdSetTxBitrateMask
-	CmdRegisterFrame
-	CmdRegisterAction = CmdRegisterFrame
-	CmdFrame
-	CmdAction = CmdFrame
-	CmdFrameTxStatus
-	CmdActionTxStatus = CmdFrameTxStatus
-	CmdSetPowerSave
-	CmdGetPowerSave
-	CmdSetCqm
-	CmdNotifyCqm
-	CmdSetChannel
-	CmdSetWdsPeer
-	CmdFrameWaitCancel
-	CmdJoinMesh
-	CmdLeaveMesh
-	CmdUnprotDeauthenticate
-	CmdUnprotDisassociate
-	CmdNewPeerCandidate
-	CmdGetWowlan
-	CmdSetWowlan
-	CmdStartSchedScan
-	CmdStopSchedScan
-	CmdSchedScanResults
-	CmdSchedScanStopped
-	CmdSetRekeyOffload
-	CmdPmksaCandidate
-	CmdTdlsOper
-	CmdTdlsMgmt
-	CmdUnexpectedFrame
-	CmdProbeClient
-	CmdRegisterBeacons
-	CmdUnexpected4addrFrame
-	CmdSetNoackMap
-	CmdChSwitchNotify
-	CmdStartP2pDevice
-	CmdStopP2pDevice
-	CmdConnFailed
-	CmdSetMcastRate
-	CmdSetMacAcl
-	CmdRadarDetect
-	CmdGetProtocolFeatures
-	CmdUpdateFtIes
-	CmdFtEvent
-	CmdCritProtocolStart
-	CmdCritProtocolStop
-	CmdGetCoalesce
-	CmdSetCoalesce
-	CmdChannelSwitch
-	CmdVendor
-	CmdSetQosMap
-	CmdAddTxTs
-	CmdDelTxTs
-	CmdGetMpp
-	CmdJoinOcb
-	CmdLeaveOcb
-	CmdChSwitchStartedNotify
-	CmdTdlsChannelSwitch
-	CmdTdlsCancelChannelSwitch
-	CmdWiphyRegChange
-	CmdAbortScan
-	CmdStartNan
-	CmdStopNan
-	CmdAddNanFunction
-	CmdDelNanFunction
-	CmdChangeNanConfig
-	CmdNanMatch
-	__CmdAfterLast
-	CmdMax = __CmdAfterLast - 1
+	CommandUnspec = iota
+	CommandGetWiphy
+	CommandSetWiphy
+	CommandNewWiphy
+	CommandDelWiphy
+	CommandGetInterface
+	CommandSetInterface
+	CommandNewInterface
+	CommandDelInterface
+	CommandGetKey
+	CommandSetKey
+	CommandNewKey
+	CommandDelKey
+	CommandGetBeacon
+	CommandSetBeacon
+	CommandStartAp
+	CommandNewBeacon = CommandStartAp
+	CommandStopAp
+	CommandDelBeacon = CommandStopAp
+	CommandGetStation
+	CommandSetStation
+	CommandNewStation
+	CommandDelStation
+	CommandGetMpath
+	CommandSetMpath
+	CommandNewMpath
+	CommandDelMpath
+	CommandSetBss
+	CommandSetReg
+	CommandReqSetReg
+	CommandGetMeshConfig
+	CommandSetMeshConfig
+	CommandSetMgmtExtraIe
+	CommandGetReg
+	CommandGetScan
+	CommandTriggerScan
+	CommandNewScanResults
+	CommandScanAborted
+	CommandRegChange
+	CommandAuthenticate
+	CommandAssociate
+	CommandDeauthenticate
+	CommandDisassociate
+	CommandMichaelMicFailure
+	CommandRegBeaconHint
+	CommandJoinIbss
+	CommandLeaveIbss
+	CommandTestmode
+	CommandConnect
+	CommandRoam
+	CommandDisconnect
+	CommandSetWiphyNetns
+	CommandGetSurvey
+	CommandNewSurveyResults
+	CommandSetPmksa
+	CommandDelPmksa
+	CommandFlushPmksa
+	CommandRemainOnChannel
+	CommandCancelRemainOnChannel
+	CommandSetTxBitrateMask
+	CommandRegisterFrame
+	CommandRegisterAction = CommandRegisterFrame
+	CommandFrame
+	CommandAction = CommandFrame
+	CommandFrameTxStatus
+	CommandActionTxStatus = CommandFrameTxStatus
+	CommandSetPowerSave
+	CommandGetPowerSave
+	CommandSetCqm
+	CommandNotifyCqm
+	CommandSetChannel
+	CommandSetWdsPeer
+	CommandFrameWaitCancel
+	CommandJoinMesh
+	CommandLeaveMesh
+	CommandUnprotDeauthenticate
+	CommandUnprotDisassociate
+	CommandNewPeerCandidate
+	CommandGetWowlan
+	CommandSetWowlan
+	CommandStartSchedScan
+	CommandStopSchedScan
+	CommandSchedScanResults
+	CommandSchedScanStopped
+	CommandSetRekeyOffload
+	CommandPmksaCandidate
+	CommandTdlsOper
+	CommandTdlsMgmt
+	CommandUnexpectedFrame
+	CommandProbeClient
+	CommandRegisterBeacons
+	CommandUnexpected4addrFrame
+	CommandSetNoackMap
+	CommandChSwitchNotify
+	CommandStartP2pDevice
+	CommandStopP2pDevice
+	CommandConnFailed
+	CommandSetMcastRate
+	CommandSetMacAcl
+	CommandRadarDetect
+	CommandGetProtocolFeatures
+	CommandUpdateFtIes
+	CommandFtEvent
+	CommandCritProtocolStart
+	CommandCritProtocolStop
+	CommandGetCoalesce
+	CommandSetCoalesce
+	CommandChannelSwitch
+	CommandVendor
+	CommandSetQosMap
+	CommandAddTxTs
+	CommandDelTxTs
+	CommandGetMpp
+	CommandJoinOcb
+	CommandLeaveOcb
+	CommandChSwitchStartedNotify
+	CommandTdlsChannelSwitch
+	CommandTdlsCancelChannelSwitch
+	CommandWiphyRegChange
+	CommandAbortScan
+	CommandStartNan
+	CommandStopNan
+	CommandAddNanFunction
+	CommandDelNanFunction
+	CommandChangeNanConfig
+	CommandNanMatch
+	__CommandAfterLast
+	CommandMax = __CommandAfterLast - 1
 )
 
 // nl80211Attrs as declared in nl80211/nl80211.h:1929

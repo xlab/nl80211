@@ -17,4 +17,5 @@ TRANSLATOR:
       - {action: replace, from: "(?i)nl80211_", to: _}
       - {transform: export}
     post-global: 
+      - {action: replace, from: "cmd_", to: command_}
       - {load: snakecase}
